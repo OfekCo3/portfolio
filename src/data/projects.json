@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Guardify AI",
+    "description": "AI-driven shoplifting detection system combining computer vision, LLM agents, and real-time analysis pipelines.",
+    "longDescription": "Built a full-stack system to help retailers detect shoplifting in real-time. Features include a CV model generating structured behavior observations, an analysis model making detection decisions with confidence calibration, and an event description model producing professional summaries. Backend powered by Flask + Celery + Redis, frontend built with React + TypeScript, deployed on Google Cloud.",
+    "techStack": ["Python", "Flask", "Celery", "Redis", "PostgreSQL", "React", "TypeScript", "GCP"],
+    "githubUrl": "https://github.com/GuardifyAI/Guardify-AI",
+    "imageUrl": "/images/guardify-preview.jpg",
+    "category": ["AI", "Full-Stack", "Machine Learning", "Cloud"],
+    "completedDate": "2025-06-15",
+    "projectType": "academic"
+  },
+  {
+    "id": 2,
+    "title": "Virtual Pet (Chrome Extension)",
+    "description": "Interactive Chrome extension with pets you can feed, shower, and play with.",
+    "longDescription": "A lightweight frontend-only Chrome extension where users adopt a pet (cat, dog, hamster, parrot, or fish). Includes happiness meter, petting interactions, feeding vegetables, and animated shower feature. Reached 500+ downloads and received user feedback-driven feature updates.",
+    "techStack": ["JavaScript", "HTML5", "CSS3", "Chrome API"],
+    "githubUrl": "https://github.com/OfekCo3/chrome-extension-virtual-pet",
+    "imageUrl": "/images/virtualpet-preview.jpg",
+    "category": ["Frontend", "Extension"],
+    "completedDate": "2025-05-30",
+    "projectType": "personal"
+  },
+  {
+    "id": 3,
+    "title": "Gold Miner 2-Player Arcade Game",
+    "description": "Competitive real-time Gold Miner clone with ECS, physics, and scoring system.",
+    "longDescription": "Developed a 2-player arcade game with retractable ropes, scoring mechanics, and themed environments. Implemented physics with Box2D, rendering with SDL/SFML, and zero-heap ECS design for high performance. Includes pixel-art UI and real-time multiplayer interactions.",
+    "techStack": ["C++", "SDL2/SFML", "Box2D", "ECS (Bagel)"],
+    "githubUrl": "https://github.com/ElizabethAsh/GoldMiner",
+    "imageUrl": "/images/goldminer-preview.jpg",
+    "category": ["Game Development", "C++"],
+    "completedDate": "2025-06-01",
+    "projectType": "academic"
+  },
+  {
+    "id": 5,
+    "title": "Workout Web App",
+    "description": "MERN stack workout management app with authentication, filtering, and video workouts.",
+    "longDescription": "Built in a summer React camp, this web app lets users browse, like, and upload workouts. Includes authentication with bcrypt + passport, filtering by duration, equipment, and category, and a grid-based workout explorer with ReactPlayer integration. Non-logged users can view but not like/upload.",
+    "techStack": ["MongoDB", "Express", "React", "Node.js", "Passport.js", "bcryptjs"],
+    "githubUrl": "https://github.com/OfekCo3/WorkoutApp",
+    "imageUrl": "/images/workout-preview.jpg",
+    "category": ["Full-Stack", "React"],
+    "completedDate": "2024-09-01",
+    "projectType": "personal"
+  },
+  {
+    "id": 6,
+    "title": "Semantic Clustering of User Requests",
+    "description": "NLP project clustering unlabeled queries with SentenceTransformers and hybrid cluster naming.",
+    "longDescription": "Final project for NLP course. Built an end-to-end pipeline using Hugging Face Transformers, SentenceTransformer embeddings, and centroid-based clustering for unlabeled user queries. Applied hybrid KeyBERT + TF-IDF for cluster naming and implemented semantic representative sampling.",
+    "techStack": ["Python", "Hugging Face", "SentenceTransformers", "KeyBERT", "TF-IDF"],
+    "githubUrl": "https://github.com/OfekCo3/Unsupervised-Clustering-Semantic-Labeling-of-User-Requests",
+    "imageUrl": "/images/nlp-clustering-preview.jpg",
+    "category": ["Machine Learning", "NLP", "Data Science"],
+    "completedDate": "2025-06-05",
+    "projectType": "academic"
+  },
+  {
+    "id": 7,
+    "title": "Serverless AI Chatbot (AWS + OpenAI)",
+    "description": "Full-stack serverless chatbot with OpenAI integration, built on AWS.",
+    "longDescription": "Built in the Honors Program Boot Camp. Delivered a working MVP within hours using AWS Lambda, DynamoDB, and Amplify Hosting. Integrated OpenAI API for real-time personalized conversations, including session management and history tracking.",
+    "techStack": ["AWS Lambda", "DynamoDB", "Amplify", "OpenAI API", "JavaScript"],
+    "githubUrl": "https://github.com/OfekCo3/ServerlessChatbot",
+    "imageUrl": "/images/serverless-chatbot-preview.jpg",
+    "category": ["Cloud", "AI", "Serverless"],
+    "completedDate": "2025-03-15",
+    "projectType": "academic"
+  }
+]
