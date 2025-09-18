@@ -42,7 +42,6 @@
     "description": "MERN stack workout management app with authentication, filtering, and video workouts.",
     "longDescription": "Built in a summer React camp, this web app lets users browse, like, and upload workouts. Includes authentication with bcrypt + passport, filtering by duration, equipment, and category, and a grid-based workout explorer with ReactPlayer integration. Non-logged users can view but not like/upload.",
     "techStack": ["MongoDB", "Express", "React", "Node.js", "Passport.js", "bcryptjs"],
-    "githubUrl": "https://github.com/OfekCo3/WorkoutApp",
     "linkedinUrl": "https://www.linkedin.com/posts/ofek-cohen33_thrilled-to-share-the-results-of-the-queen-activity-7252285035771248640-guig?utm_source=share&utm_medium=member_desktop&rcm=ACoAADiD68kBIxCPhULKDCu0K0lLvdEVM4Rllzs",
     "imageUrl": "/images/projects/workout-preview.jpg",
     "category": ["Full-Stack", "Frontend"],
