@@ -2,10 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import { 
-  timelineConfig, 
   interestsConfig,
   personalConfig 
 } from '@/config';
+import Skills from '@/components/Skills';
+import Timeline from '@/components/Timeline';
 
 export default function AboutPage() {
   const [mounted, setMounted] = useState(false);
@@ -61,53 +62,21 @@ export default function AboutPage() {
         </section>
 
 
+        {/* Skills Section */}
+        <Skills 
+          title="Technical Skills"
+          subtitle="Technologies and tools I work with to bring ideas to life"
+          showBackground={false}
+          className="mb-20"
+        />
+
         {/* Timeline Section */}
-        <section className="mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">My Journey</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              A timeline of my educational and professional milestones in computer science and development.
-            </p>
-          </div>
-
-          <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-gray-300"></div>
-
-            <div className="space-y-12">
-              {timelineConfig.map((item, index) => (
-                <div key={index} className={`relative flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
-                  <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8'}`}>
-                    <div className={`animate-fade-in ${index % 2 === 0 ? 'animate-slide-in-left' : 'animate-slide-in-right'}`} style={{ animationDelay: `${index * 200}ms` }}>
-                      <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                        <div className="flex items-center justify-between mb-2">
-                          <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
-                          <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                            item.type === 'education' ? 'bg-blue-100 text-blue-800' :
-                            item.type === 'work' ? 'bg-green-100 text-green-800' :
-                            item.type === 'milestone' ? 'bg-purple-100 text-purple-800' :
-                            'bg-orange-100 text-orange-800'
-                          }`}>
-                            {item.type}
-                          </span>
-                        </div>
-                        <p className="text-gray-600">{item.description}</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Timeline Node */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg z-10"></div>
-
-                  {/* Year */}
-                  <div className={`w-1/2 ${index % 2 === 0 ? 'pl-8' : 'pr-8 text-right'}`}>
-                    <span className="text-2xl font-bold text-blue-600">{item.year}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <Timeline 
+          title="My Journey"
+          subtitle="A timeline of my educational and professional milestones in computer science and development"
+          showBackground={false}
+          className="mb-20"
+        />
 
         {/* Interests Section */}
         <section className="mb-20">
