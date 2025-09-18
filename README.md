@@ -2,8 +2,6 @@
 
 A modern, responsive portfolio website built with Next.js, TypeScript, and TailwindCSS. Perfect for students to showcase their projects, skills, and career journey. Features a clean design with smooth animations and easy customization.
 
-![Portfolio Preview](public/images/portfolio-preview.jpg)
-
 > **🎯 For Students**: This template is designed to be easily customizable with your own data. Follow the setup guide below to create your personal portfolio in minutes!
 
 ## 🌟 Features
