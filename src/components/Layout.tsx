@@ -157,16 +157,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                      </Link>
                    </li>
                  ))}
-                 {footerLinksConfig.map((item) => (
-                   <li key={item.href}>
-                     <Link
-                       href={item.href}
-                       className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
-                     >
-                       {item.label}
-                     </Link>
-                   </li>
-                 ))}
                </ul>
             </div>
 

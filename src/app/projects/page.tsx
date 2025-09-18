@@ -50,22 +50,6 @@ export default function ProjectsPage() {
         {/* Search and Filter Controls */}
         <div className="mb-12 animate-fade-in" style={{ animationDelay: '400ms' }}>
           <div className="flex flex-col md:flex-row gap-6 items-center justify-between">
-            {/* Search Bar */}
-            <div className="relative w-full md:w-96">
-              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              </div>
-              <input
-                type="text"
-                placeholder="Search projects, technologies..."
-                className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-              />
-            </div>
-
             {/* Category Filter */}
             <div className="flex flex-wrap gap-2">
               {categories.map((category) => (
@@ -127,37 +111,6 @@ export default function ProjectsPage() {
             </button>
           </div>
         )}
-
-        {/* Technologies Section */}
-        <section className="mt-20 pt-20 border-t border-gray-200">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Technologies I Work With
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Here are the main technologies and tools I use across my projects.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {Array.from(new Set(projectsData.flatMap(project => project.techStack)))
-              .sort()
-              .map((tech, index) => (
-                <div
-                  key={tech}
-                  className="group p-4 bg-white border border-gray-200 rounded-lg hover:border-blue-300 hover:shadow-md transition-all duration-200 text-center animate-fade-in"
-                  style={{ animationDelay: `${index * 50}ms` }}
-                >
-                  <div className="text-sm font-medium text-gray-700 group-hover:text-blue-600 transition-colors duration-200">
-                    {tech}
-                  </div>
-                  <div className="text-xs text-gray-500 mt-1">
-                    {projectsData.filter(project => project.techStack.includes(tech)).length} projects
-                  </div>
-                </div>
-              ))}
-          </div>
-        </section>
 
         {/* Call to Action */}
         <section className="mt-20 pt-20 border-t border-gray-200 text-center">

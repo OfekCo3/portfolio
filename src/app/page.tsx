@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import ProjectCard from '@/components/ProjectCard';
 import projectsData from '@/data/projects.json';
 import type { Project } from '@/components/ProjectCard';
@@ -81,26 +82,20 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Hero Image/Animation */}
+            {/* Profile Picture */}
             <div className="relative animate-slide-in-right">
               <div className="relative w-full max-w-lg mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full blur-2xl opacity-20 animate-pulse-slow"></div>
-                <div className="relative bg-white rounded-2xl shadow-2xl p-8 animate-float">
-                  <div className="space-y-4">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                      <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                      <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                    </div>
-                    <div className="bg-gray-100 rounded-lg p-4 font-mono text-sm">
-                      <div className="text-blue-600">const</div>
-                      <div className="text-purple-600 ml-2">developer</div>
-                      <div className="text-gray-700 ml-4">= {'{'}</div>
-                      <div className="text-green-600 ml-6">name: &quot;{personalConfig.name}&quot;,</div>
-                      <div className="text-green-600 ml-6">role: &quot;CS Student&quot;,</div>
-                      <div className="text-green-600 ml-6">passion: &quot;Innovation&quot;</div>
-                      <div className="text-gray-700 ml-4">{'};'}</div>
-                    </div>
+                <div className="relative">
+                  <div className="rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-50 to-purple-50 p-6">
+                    <Image
+                      src={personalConfig.profileImage}
+                      alt={personalConfig.name}
+                      width={500}
+                      height={500}
+                      className="w-full h-auto object-contain rounded-xl animate-float"
+                      priority
+                    />
                   </div>
                 </div>
               </div>
@@ -143,35 +138,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Skills Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              Skills & Technologies
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              I work with modern technologies to create robust and scalable solutions.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-            {homePageSkills.map((skill, index) => (
-              <div
-                key={skill.name}
-                className={`group p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 animate-fade-in`}
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className={`w-12 h-12 bg-gradient-to-r ${skill.color} rounded-lg mb-4 mx-auto flex items-center justify-center text-white font-bold text-lg group-hover:scale-110 transition-transform duration-200`}>
-                  {skill.name.charAt(0)}
-                </div>
-                <h3 className="text-sm font-semibold text-gray-900 text-center">{skill.name}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-20 bg-blue-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -187,12 +153,6 @@ export default function Home() {
               className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-blue-600 bg-white hover:bg-gray-50 transition-colors duration-200 btn-hover-lift"
             >
               Start a Conversation
-            </Link>
-            <Link
-              href="/resume"
-              className="inline-flex items-center justify-center px-8 py-3 border border-white text-base font-medium rounded-lg text-white hover:bg-blue-700 transition-colors duration-200 btn-hover-lift"
-            >
-              Download Resume
             </Link>
           </div>
         </div>

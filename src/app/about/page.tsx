@@ -7,7 +7,6 @@ import {
   interestsConfig,
   personalConfig 
 } from '@/config';
-import Image from 'next/image';
 
 export default function AboutPage() {
   const [mounted, setMounted] = useState(false);
@@ -33,54 +32,30 @@ export default function AboutPage() {
           </p>
         </div>
 
-        {/* Personal Info Section */}
+        {/* Quick Facts Section */}
         <section className="mb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Profile Image */}
-            <div className="animate-slide-in-left">
-              <div className="relative w-full max-w-md mx-auto">
-                <div className="rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-50 to-purple-50 p-4">
-                  <Image
-                    src={personalConfig.profileImage}
-                    alt={personalConfig.name}
-                    width={400}
-                    height={400}
-                    className="w-full h-auto object-contain rounded-xl"
-                    priority
-                  />
-                </div>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center animate-fade-in">Quick Facts</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 text-center">
+                <div className="text-2xl mb-2">📍</div>
+                <h3 className="font-semibold text-gray-900 mb-2">Location</h3>
+                <p className="text-gray-600">{personalConfig.location}</p>
               </div>
-            </div>
-
-            {/* Personal Story */}
-            <div className="animate-slide-in-right">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">My Story</h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed">
-                {personalConfig.personalStory.map((paragraph, index) => (
-                  <p key={index}>
-                    {paragraph}
-                  </p>
-                ))}
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 text-center">
+                <div className="text-2xl mb-2">🎓</div>
+                <h3 className="font-semibold text-gray-900 mb-2">Study</h3>
+                <p className="text-gray-600">{personalConfig.study}</p>
               </div>
-
-              {/* Quick Facts */}
-              <div className="mt-8 grid grid-cols-2 gap-6">
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Location</h3>
-                  <p className="text-gray-600">{personalConfig.location}</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Study</h3>
-                  <p className="text-gray-600">{personalConfig.study}</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Experience</h3>
-                  <p className="text-gray-600">{personalConfig.experience}</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Focus</h3>
-                  <p className="text-gray-600">{personalConfig.focus}</p>
-                </div>
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 text-center">
+                <div className="text-2xl mb-2">💼</div>
+                <h3 className="font-semibold text-gray-900 mb-2">Experience</h3>
+                <p className="text-gray-600">{personalConfig.experience}</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 text-center">
+                <div className="text-2xl mb-2">🎯</div>
+                <h3 className="font-semibold text-gray-900 mb-2">Focus</h3>
+                <p className="text-gray-600">{personalConfig.focus}</p>
               </div>
             </div>
           </div>

@@ -282,17 +282,6 @@ export default function ContactPage() {
                   ))}
                 </div>
               </div>
-
-
-              {/* Availability */}
-              <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">🗓️ Availability</h3>
-                <div className="space-y-2 text-sm text-gray-700">
-                  <p><span className="font-medium">Current Status:</span> Actively seeking opportunities</p>
-                  <p><span className="font-medium">Best Times:</span> Weekdays 9 AM - 6 PM PST</p>
-                  <p><span className="font-medium">Time Zone:</span> Pacific Standard Time (PST)</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

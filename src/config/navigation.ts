@@ -1,3 +1,5 @@
+import { contactMethodsConfig } from './contact';
+
 export interface NavItem {
   href: string;
   label: string;
@@ -17,16 +19,11 @@ export const navigationConfig: NavItem[] = [
 ];
 
 export const socialLinksConfig: SocialLink[] = [
-  { href: 'https://github.com/ofekcohen', label: 'GitHub', icon: 'github' },
-  { href: 'https://linkedin.com/in/ofekcohen', label: 'LinkedIn', icon: 'linkedin' },
-  { href: 'mailto:ofek.cohen@email.com', label: 'Email', icon: 'email' },
+  { href: contactMethodsConfig.github.href, label: contactMethodsConfig.github.title, icon: 'github' },
+  { href: contactMethodsConfig.linkedin.href, label: contactMethodsConfig.linkedin.title, icon: 'linkedin' },
+  { href: contactMethodsConfig.email.href, label: contactMethodsConfig.email.title, icon: 'email' },
 ];
 
-// Additional footer links
-export const footerLinksConfig: NavItem[] = [
-  { href: '/resume', label: 'Resume' },
-];
 
 export type NavigationConfig = typeof navigationConfig;
 export type SocialLinksConfig = typeof socialLinksConfig;
-export type FooterLinksConfig = typeof footerLinksConfig;
