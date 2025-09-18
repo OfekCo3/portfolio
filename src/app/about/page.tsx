@@ -5,7 +5,6 @@ import {
   interestsConfig,
   personalConfig 
 } from '@/config';
-import Skills from '@/components/Skills';
 import Timeline from '@/components/Timeline';
 
 export default function AboutPage() {
@@ -60,15 +59,6 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
-
-
-        {/* Skills Section */}
-        <Skills 
-          title="Technical Skills"
-          subtitle="Technologies and tools I work with to bring ideas to life"
-          showBackground={false}
-          className="mb-20"
-        />
 
         {/* Timeline Section */}
         <Timeline 
