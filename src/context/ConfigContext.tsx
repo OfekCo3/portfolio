@@ -50,8 +50,8 @@ export function useSiteConfig() {
 }
 
 export function useNavigationConfig() {
-  const { navigationConfig, socialLinksConfig, footerLinksConfig } = useConfig();
-  return { navigationConfig, socialLinksConfig, footerLinksConfig };
+  const { navigationConfig, socialLinksConfig } = useConfig();
+  return { navigationConfig, socialLinksConfig };
 }
 
 export function useContactConfig() {
@@ -60,8 +60,8 @@ export function useContactConfig() {
 }
 
 export function useSkillsConfig() {
-  const { skillsConfig, homePageSkills } = useConfig();
-  return { skillsConfig, homePageSkills };
+  const { skillsConfig } = useConfig();
+  return { skillsConfig };
 }
 
 export function useAboutConfig() {

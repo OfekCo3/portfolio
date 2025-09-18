@@ -81,6 +81,10 @@ export const siteConfig = {
       type: "website",
       locale: "en_US",
       siteName: "Ofek Cohen Portfolio",
+    },
+    twitter: {
+      creator: "@yourusername", // Replace with your Twitter handle or leave as is if you don't have Twitter
+      site: "@yourusername"     // Replace with your Twitter handle or leave as is if you don't have Twitter
     }
   }
 };

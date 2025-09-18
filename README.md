@@ -214,6 +214,13 @@ export const siteConfig = {
   name: "Your Name - Portfolio",
   description: "Your portfolio description for search engines",
   url: "https://yourportfolio.com",
+  author: "Your Name",
+  seo: {
+    twitter: {
+      creator: "@yourtwitterhandle", // Replace with your Twitter handle, or leave as "@yourusername" if you don't have Twitter
+      site: "@yourtwitterhandle"
+    }
+  }
   // ... more SEO settings
 }
 ```

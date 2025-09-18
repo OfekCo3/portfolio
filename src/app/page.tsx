@@ -6,7 +6,7 @@ import ProjectCard from '@/components/ProjectCard';
 import projectsData from '@/data/projects.json';
 import type { Project } from '@/components/ProjectCard';
 import { useState, useEffect } from 'react';
-import { personalConfig, homePageSkills } from '@/config';
+import { personalConfig } from '@/config';
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);

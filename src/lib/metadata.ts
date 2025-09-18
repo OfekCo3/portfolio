@@ -26,7 +26,9 @@ export function createMetadata(overrides: Partial<Metadata> = {}): Metadata {
       card: "summary_large_image",
       title: siteConfig.title,
       description: siteConfig.description,
-      creator: siteConfig.seo.twitter.creator,
+      ...(siteConfig.seo.twitter.creator !== "@yourusername" && {
+        creator: siteConfig.seo.twitter.creator,
+      }),
     },
   };
 

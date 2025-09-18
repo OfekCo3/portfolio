@@ -4,10 +4,10 @@ import { timelineConfig, type TimelineItem } from '@/config';
 interface TimelineItemComponentProps {
   item: TimelineItem;
   index: number;
-  isLast: boolean;
+  isLast?: boolean;
 }
 
-const TimelineItemComponent: React.FC<TimelineItemComponentProps> = ({ item, index, isLast }) => {
+const TimelineItemComponent: React.FC<TimelineItemComponentProps> = ({ item, index }) => {
   const getTypeColor = (type: TimelineItem['type']) => {
     switch (type) {
       case 'education':

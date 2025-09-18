@@ -6,7 +6,6 @@ import { useState } from 'react';
 import { 
   navigationConfig, 
   socialLinksConfig, 
-  footerLinksConfig, 
   personalConfig,
   siteConfig 
 } from '@/config';

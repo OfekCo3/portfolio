@@ -1,5 +1,6 @@
 // Central configuration exports
 export { personalConfig } from './personal';
+export { skillsConfig } from './skills';
 export { timelineConfig } from './timeline';
 export { interestsConfig } from './interests';
 export { navigationConfig, socialLinksConfig } from './navigation';
