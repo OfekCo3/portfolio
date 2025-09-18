@@ -26,14 +26,4 @@ export const skillsConfig: Skill[] = [
   }
 ];
 
-// Skills for the home page (simplified display)
-export const homePageSkills = [
-  { name: 'React', color: 'from-blue-400 to-blue-600' },
-  { name: 'TypeScript', color: 'from-blue-500 to-blue-700' },
-  { name: 'Next.js', color: 'from-gray-700 to-gray-900' },
-  { name: 'Node.js', color: 'from-green-500 to-green-700' },
-  { name: 'Python', color: 'from-yellow-400 to-yellow-600' },
-  { name: 'TailwindCSS', color: 'from-cyan-400 to-cyan-600' },
-];
-
 export type SkillsConfig = typeof skillsConfig;

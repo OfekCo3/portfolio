@@ -30,20 +30,36 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
 portfolio/
 ├── public/
 │   ├── images/          # Project screenshots and assets
+│   │   ├── projects/    # Project images
+│   │   └── profile.jpg  # Profile photo
 │   └── ...             # Static files
 ├── src/
 │   ├── app/            # Next.js App Router pages
-│   │   ├── about/      # About page
-│   │   ├── contact/    # Contact page
-│   │   ├── projects/   # Projects page
-│   │   ├── globals.css # Global styles
-│   │   ├── layout.tsx  # Root layout
-│   │   └── page.tsx    # Home page
+│   │   ├── about/      # About page with timeline & interests
+│   │   ├── contact/    # Contact page with form & methods
+│   │   ├── projects/   # Projects page with skills section
+│   │   ├── globals.css # Global styles & animations
+│   │   ├── layout.tsx  # Root layout with navigation
+│   │   └── page.tsx    # Home page with hero & featured projects
 │   ├── components/     # Reusable components
-│   │   ├── Layout.tsx  # Main layout with nav/footer
-│   │   └── ProjectCard.tsx # Project card component
+│   │   ├── ContactForm.tsx      # Contact form with validation
+│   │   ├── ContactMethods.tsx   # Social links & contact info
+│   │   ├── ContactReasons.tsx   # Why contact section
+│   │   ├── Layout.tsx           # Main layout with nav/footer
+│   │   ├── ProjectCard.tsx      # Project card component
+│   │   ├── Skills.tsx           # Technical skills with categories
+│   │   └── Timeline.tsx         # Career timeline with alternating layout
+│   ├── config/         # Configuration files
+│   │   ├── contact.ts   # Contact methods & reasons
+│   │   ├── index.ts     # Central exports
+│   │   ├── interests.ts # Areas of interest
+│   │   ├── navigation.ts # Navigation & social links
+│   │   ├── personal.ts  # Personal information
+│   │   ├── site.ts      # Site metadata & SEO
+│   │   ├── skills.ts    # Technical skills data
+│   │   └── timeline.ts  # Career timeline data
 │   └── data/
-│       └── projects.json # Project data
+│       └── projects.json # Project data & metadata
 ├── vercel.json         # Vercel deployment config
 └── README.md
 ```
@@ -206,9 +222,6 @@ export const siteConfig = {
 }
 ```
 
-### 📖 Detailed Configuration Guide
-
-See **[CONFIGURATION.md](CONFIGURATION.md)** for a complete guide on customizing every aspect of your portfolio.
 
 ### 🚀 Configuration Files
 
@@ -219,6 +232,32 @@ See **[CONFIGURATION.md](CONFIGURATION.md)** for a complete guide on customizing
 - `src/config/navigation.ts` - Navigation and social links
 - `src/config/contact.ts` - Contact page settings and FAQ
 - `src/config/site.ts` - SEO, metadata, and site-wide settings
+
+## 🧩 Components Overview
+
+### 📄 **Page Components**
+- **`Layout.tsx`** - Main layout wrapper with navigation and footer
+- **`ProjectCard.tsx`** - Individual project display cards with links and tech stack
+
+### 💼 **Skills Components**
+- **`Skills.tsx`** - Technical skills organized by categories with beautiful card layout
+- **`SkillCategory`** - Sub-component for individual skill categories
+
+### 📅 **Timeline Components**
+- **`Timeline.tsx`** - Career journey with alternating left-right layout
+- **`TimelineItemComponent`** - Individual timeline entries with animations
+
+### 📞 **Contact Components**
+- **`ContactForm.tsx`** - Contact form with validation and submission handling
+- **`ContactMethods.tsx`** - Social links and contact information display
+- **`ContactReasons.tsx`** - Why people should contact you section
+
+### ✨ **Component Features**
+- **Responsive Design** - All components work on desktop, tablet, and mobile
+- **Smooth Animations** - Fade-in effects, hover animations, and transitions
+- **TypeScript Support** - Full type safety with proper interfaces
+- **Customizable Props** - Easy to customize titles, colors, and behavior
+- **Accessible** - Proper ARIA labels and keyboard navigation
 
 ## 🎨 Design System
 
@@ -310,64 +349,10 @@ If you want a custom domain like `yourname.com`:
 - **Tablet**: 768px - 1024px
 - **Desktop**: 1024px+
 
-## 🔧 Environment Variables
-
-Create `.env.local` for environment-specific configs:
-
-```env
-NEXT_PUBLIC_SITE_URL=https://yourportfolio.com
-NEXT_PUBLIC_GOOGLE_ANALYTICS_ID=your-ga-id
-```
 
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-## 🚨 Troubleshooting
-
-### Common Issues & Solutions
-
-#### "npm install" fails
-```bash
-# Try clearing npm cache
-npm cache clean --force
-npm install
-```
-
-#### Development server won't start
-```bash
-# Make sure you're in the right directory
-cd portfolio
-# Check if port 3000 is busy
-npm run dev -- --port 3001
-```
-
-#### Images not showing
-- Check that image files are in `public/images/`
-- Use correct paths: `/images/filename.jpg` (starting with `/`)
-- Supported formats: `.jpg`, `.png`, `.webp`
-
-#### Build fails
-```bash
-# Check for TypeScript errors
-npm run lint
-# Build locally to test
-npm run build
-```
-
-### Need Help?
-
-#### For Students:
-1. **Check the Issues tab** - someone might have had the same problem
-2. **Ask in Discussions** - great for general questions
-3. **Join our Discord** (if available) - real-time help from other students
-4. **Ask your professor/TA** - they can help with technical issues
-
-#### Getting Started Resources:
-- [Node.js Installation Guide](https://nodejs.org/en/download/)
-- [Git Tutorial](https://git-scm.com/docs/gittutorial)
-- [VS Code Setup](https://code.visualstudio.com/docs/setup/setup-overview)
-- [React Basics](https://react.dev/learn)
 
 ## 🤝 Contributing
 
@@ -386,13 +371,6 @@ Want to improve this template?
 - Bug fixes
 - Performance improvements
 
-## 🙏 Acknowledgments
-
-- **Next.js Team**: For the amazing framework
-- **Vercel**: For seamless deployment
-- **TailwindCSS**: For beautiful styling
-- **Heroicons**: For the icon set
-- **The Student Community**: For feedback and contributions
 
 
 ## 🌟 Show Your Support
@@ -402,13 +380,9 @@ If this template helped you create an awesome portfolio:
 - ⭐ **Star this repository** 
 - 🔄 **Share with classmates**
 - 📝 **Leave feedback** in the Issues tab
-- 💼 **Tag us** when you get that job/internship!
+- 💼 **Tag me** when you get that job/internship!
 
 **Happy coding, and best of luck with your career!** 🚀
 
 ---
 
-### 📌 Template Credits
-Originally created for students by students. Feel free to customize, share, and contribute!
-
-> 💡 **Pro Tip**: Keep your portfolio updated with new projects and skills as you grow in your career!

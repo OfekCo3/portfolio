@@ -21,17 +21,7 @@ export const personalConfig = {
     "Beyond coding, I mentor young programmers, helping them learn Python, OOP, and databases, and I love guiding teams to achieve their goals.",
     "I'm always eager to grow, learn new technologies, and work with innovative teams that build solutions with real-world impact."
   ],
-  
-  // Current Status
-  availability: {
-    status: "Actively seeking opportunities",
-    lookingFor: "internships and entry-level positions in Data Science & Full-Stack Development",
-    bestTimes: "Weekdays 9 AM - 6 PM IST",
-    timeZone: "Israel Standard Time (IST)",
-    openToFreelance: true,
-    offersMentorship: true
-  },
-  
+    
   // Quick Stats for Hero Section
   stats: {
     yearsOfCoding: "3+",

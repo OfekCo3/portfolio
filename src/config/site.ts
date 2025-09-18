@@ -25,7 +25,6 @@ export const siteConfig = {
   
   // Social Media
   ogImage: "/images/og-image.jpg", // Add this image to public/images/
-  twitterHandle: "@ofekcohen", // Optional
   
   // Brand
   logo: {
@@ -82,11 +81,6 @@ export const siteConfig = {
       type: "website",
       locale: "en_US",
       siteName: "Ofek Cohen Portfolio",
-    },
-    twitter: {
-      card: "summary_large_image",
-      site: "@ofekcohen",
-      creator: "@ofekcohen",
     }
   }
 };
