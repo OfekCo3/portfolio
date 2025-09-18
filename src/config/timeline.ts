@@ -2,7 +2,7 @@ export interface TimelineItem {
   year: string;
   title: string;
   description: string;
-  type: 'education' | 'work' | 'milestone' | 'goal';
+  type: 'education' | 'work' | 'milestone' | 'goal' | 'volunteering';
 }
 
 export const timelineConfig: TimelineItem[] = [
@@ -13,15 +13,33 @@ export const timelineConfig: TimelineItem[] = [
     type: 'work'
   },
   {
+    year: '2020',
+    title: 'She Codes – Python Course',
+    description: 'Joined She Codes community and completed a Python programming course.',
+    type: 'education'
+  },
+  {
+    year: '2021',
+    title: 'She Codes – Event Coordinator',
+    description: 'Volunteered as an event coordinator, organizing community events and workshops.',
+    type: 'volunteering'
+  },
+  {
     year: '2022',
     title: 'Started Computer Science Degree',
     description: 'Began my B.Sc. in Computer Science at MTA, specializing in Data Science.',
     type: 'education'
   },
   {
+    year: '2022',
+    title: 'She Codes – Python Mentor',
+    description: 'Became a mentor at She Codes, guiding women in Python and programming fundamentals.',
+    type: 'volunteering'
+  },
+  {
     year: '2023',
-    title: 'Mentorship & Teaching',
-    description: 'Guided future programmers (ages 16–17) in Python, OOP, and DB, while also mentoring peers.',
+    title: 'C++ & OOP Instructor – Cyber Education Center',
+    description: 'Taught future programmers (ages 16–17) C++ and OOP fundamentals at the Cyber Education Center.',
     type: 'work'
   },
   {

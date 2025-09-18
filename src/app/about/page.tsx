@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { 
-  skillsConfig, 
   timelineConfig, 
   interestsConfig,
   personalConfig 
@@ -61,40 +60,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Skills Section */}
-        <section className="mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Skills & Expertise</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              I&apos;m constantly learning and improving my skills across various technologies and domains.
-            </p>
-          </div>
-
-          <div className="space-y-8">
-            {skillsConfig.map((skill, index) => (
-              <div 
-                key={skill.category} 
-                className="bg-white rounded-xl shadow-lg p-6 animate-fade-in"
-                style={{ animationDelay: `${index * 200}ms` }}
-              >
-                <div className="mb-4">
-                  <h3 className="text-xl font-semibold text-gray-900">{skill.category}</h3>
-                </div>
-
-                <div className="flex flex-wrap gap-2">
-                  {skill.technologies.map((tech) => (
-                    <span
-                      key={tech}
-                      className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-blue-100 hover:text-blue-700 transition-colors duration-200"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
 
         {/* Timeline Section */}
         <section className="mb-20">

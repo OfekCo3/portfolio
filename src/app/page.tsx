@@ -11,7 +11,10 @@ import { personalConfig, homePageSkills } from '@/config';
 export default function Home() {
   const [mounted, setMounted] = useState(false);
   const typedProjectsData = projectsData as Project[];
-  const featuredProjects = typedProjectsData.filter(project => project.projectType === 'personal').slice(0, 3);
+  // Get the 3 most recent projects by completion date
+  const featuredProjects = typedProjectsData
+    .sort((a, b) => new Date(b.completedDate).getTime() - new Date(a.completedDate).getTime())
+    .slice(0, 3);
 
   useEffect(() => {
     setMounted(true);
