@@ -2,8 +2,8 @@
   {
     "id": 1,
     "title": "Guardify AI",
-    "description": "AI-driven shoplifting detection system combining computer vision, LLM agents, and real-time analysis pipelines.",
-    "longDescription": "Built a full-stack system to help retailers detect shoplifting in real-time. Features include a CV model generating structured behavior observations, an analysis model making detection decisions with confidence calibration, and an event description model producing professional summaries. Backend powered by Flask + Celery + Redis, frontend built with React + TypeScript, deployed on Google Cloud.",
+    "description": "Award-winning AI-driven shoplifting detection system combining computer vision, LLM agents, and real-time analysis pipelines.",
+    "longDescription": "Winner of 2nd place out of 70+ graduation projects. Built a full-stack system to help retailers detect shoplifting in real-time. Features include a CV model generating structured behavior observations, an analysis model making detection decisions with confidence calibration, and an event description model producing professional summaries. Backend powered by Flask + Celery + Redis, frontend built with React + TypeScript, deployed on Google Cloud.",
     "techStack": ["Python", "Flask", "Celery", "Redis", "PostgreSQL", "React", "TypeScript", "GCP"],
     "githubUrl": "https://github.com/GuardifyAI/Guardify-AI",
     "linkedinUrl": "https://www.linkedin.com/posts/ofek-cohen33_vertexai-redis-celery-activity-7373325334164701184-Amim?utm_source=share&utm_medium=member_desktop&rcm=ACoAADiD68kBIxCPhULKDCu0K0lLvdEVM4Rllzs",
@@ -15,7 +15,7 @@
   {
     "id": 2,
     "title": "Virtual Pet (Chrome Extension)",
-    "description": "Interactive Chrome extension with pets you can feed, shower, and play with.",
+    "description": "170+ users Interactive Chrome extension with pets you can feed, shower, and play with.",
     "longDescription": "A lightweight frontend-only Chrome extension where users adopt a pet (cat, dog, hamster, parrot, or fish). Includes happiness meter, petting interactions, feeding vegetables, and animated shower feature. Reached 500+ downloads and received user feedback-driven feature updates.",
     "techStack": ["JavaScript", "HTML5", "CSS3", "Chrome API"],
     "githubUrl": "https://github.com/OfekCo3/chrome-extension-virtual-pet",
@@ -71,5 +71,19 @@
     "category": ["Cloud", "AI"],
     "completedDate": "2025-03-15",
     "projectType": "academic"
+  },
+  {
+    "id": 8,
+    "title": "ExplainIt – External Library Reasoning Assistant",
+    "description": "GenAI-based developer tool that analyzes both user code and external library source code to explain their interactions.",
+    "longDescription": "Developed during the AWS Gen AI Loft Hackathon. ExplainIt is a Chrome extension and backend system that extracts the user’s code snippet, detects external library imports, automatically fetches the relevant library source code, and generates a real-time explanation of how the user code interacts with the library. Built using AWS Bedrock (Claude) with custom prompt engineering, GitHub API integration, and a lightweight Chrome extension UI. Includes reasoning about misuse, API constraints, and correct usage patterns. Delivered as a full working POC within a single hackathon day, including product pitch and roadmap.",
+    "techStack": ["Chrome Extension", "JavaScript", "AWS Bedrock", "Claude", "Python"],
+    "githubUrl": "https://github.com/michalmos262/aws-genai-hackathon",
+    "linkedinUrl": "https://www.linkedin.com/posts/ofek-cohen33_genai-rag-activity-7397278244519096320-54sa?utm_source=share&utm_medium=member_desktop&rcm=ACoAADiD68kBIxCPhULKDCu0K0lLvdEVM4Rllzs",
+    "imageUrl": "/images/projects/explainit-preview.jpg",
+    "category": ["AI", "Extension", "Cloud"],
+    "completedDate": "2025-11-19",
+    "projectType": "hackathon"
   }
+  
 ]
