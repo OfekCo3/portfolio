@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { 
   interestsConfig,
   personalConfig 
@@ -105,18 +106,18 @@ export default function AboutPage() {
             I&apos;m always interested in meeting new people and discussing exciting opportunities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <Link
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-blue-600 bg-white hover:bg-gray-50 transition-colors duration-200 btn-hover-lift"
             >
               Get In Touch
-            </a>
-            <a
+            </Link>
+            <Link
               href="/projects"
               className="inline-flex items-center justify-center px-8 py-3 border border-white text-base font-medium rounded-lg text-white hover:bg-white hover:bg-opacity-10 transition-colors duration-200 btn-hover-lift"
             >
               View My Work
-            </a>
+            </Link>
           </div>
         </section>
         

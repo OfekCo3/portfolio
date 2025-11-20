@@ -29,7 +29,7 @@ export default function ProjectDetailPage() {
       <div className="min-h-screen py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Project Not Found</h1>
-          <p className="text-lg text-gray-600 mb-8">The project you're looking for doesn't exist.</p>
+          <p className="text-lg text-gray-600 mb-8">The project you&apos;re looking for doesn&apos;t exist.</p>
           <Link
             href="/projects"
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200"
