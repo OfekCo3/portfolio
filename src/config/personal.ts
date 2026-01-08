@@ -2,24 +2,24 @@ export const personalConfig = {
   // Basic Information
   name: "Ofek Cohen",
   initials: "OC",
-  title: "Computer Science Student & Full-Stack Developer",
+  title: "Software Engineer & Computer Science Graduate",
   location: "Tel Aviv, Israel",
   study: "B.Sc. Computer Science – Data Science",
   university: "The Academic College of Tel-Aviv Yaffo",
-  experience: "3+ Years Coding, Teaching & Projects",
-  focus: "AI, Data Science & Full-Stack Development",
+  experience: "Software Engineering & Technical Leadership",
+  focus: "Software Engineering & System Architecture",
   profileImage: "/images/profile.jpg",
   
   // Bio & Descriptions
-  heroDescription: "I'm Ofek Cohen, a passionate Computer Science student with a can-do attitude. I love creating innovative solutions that combine software engineering, AI, and cloud technologies. My journey reflects determination and curiosity, from completing the Israel National Trail to mentoring the next generation of developers.",
+  heroDescription: "I'm Ofek Cohen, a Computer Science graduate with a passion for building robust, scalable software solutions. I specialize in creating innovative systems that solve real-world problems, combining technical excellence with strategic thinking. My journey reflects determination and continuous learning, from award-winning projects to mentoring emerging developers.",
   
-  aboutDescription: "I'm a passionate Computer Science student with a love for creating innovative solutions through code. My journey in technology has been driven by curiosity and a desire to make a positive impact.",
+  aboutDescription: "I'm a Computer Science graduate with expertise in software engineering. My approach combines analytical thinking with creative problem-solving to deliver impactful technology solutions.",
   
   personalStory: [
-    "Hi! I'm Ofek, a Computer Science student at The Academic College of Tel-Aviv Yaffo, specializing in Data Science. My passion for coding started in high school and grew stronger as I took on bigger challenges.",
-    "I thrive on building impactful projects — from Guardify AI (an award-winning Generative AI system) to my Virtual Pet Chrome extension, and multiple game development projects.",
-    "Beyond coding, I mentor young programmers, helping them learn Python, OOP, and databases, and I love guiding teams to achieve their goals.",
-    "I'm always eager to grow, learn new technologies, and work with innovative teams that build solutions with real-world impact."
+    "I'm Ofek, a recent Computer Science graduate from The Academic College of Tel-Aviv Yaffo.",
+    "My portfolio showcases diverse technical capabilities — from Guardify AI, an award-winning system that earned 2nd place among 70+ graduation projects, to scalable web applications and innovative Chrome extensions.",
+    "I bring both technical expertise and leadership experience, having mentored emerging developers and guided teams through complex technical challenges while maintaining high code quality standards.",
+    "I'm seeking opportunities to contribute to impactful software engineering teams where I can apply my technical skills, collaborative mindset, and passion for building exceptional user experiences."
   ],
     
   // Quick Stats for Hero Section
@@ -33,7 +33,7 @@ export const personalConfig = {
   
   // Footer
   footer: {
-    brandDescription: "Computer Science student passionate about creating innovative solutions through code.",
+    brandDescription: "Software engineer passionate about building scalable solutions and exceptional user experiences.",
     copyright: "Built with Next.js and TailwindCSS"
   }
 };

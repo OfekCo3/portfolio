@@ -123,7 +123,7 @@ Replace the example data with your information:
 export const personalConfig = {
   name: "Your Full Name",                    // Your name
   initials: "YN",                           // Used in logo/favicon
-  title: "Computer Science Student",        // Your title/role
+  title: "Software Engineer",              // Your title/role
   location: "Your City, Country",           // Where you're located
   email: "your.email@example.com",          // Your email
   phone: "+1234567890",                     // Your phone

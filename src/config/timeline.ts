@@ -27,7 +27,7 @@ export const timelineConfig: TimelineItem[] = [
   {
     year: '2022',
     title: 'Started Computer Science Degree',
-    description: 'Began my B.Sc. in Computer Science at MTA, specializing in Data Science.',
+    description: 'Began my B.Sc. in Computer Science at MTA.',
     type: 'education'
   },
   {
@@ -49,9 +49,15 @@ export const timelineConfig: TimelineItem[] = [
     type: 'milestone'
   },
   {
-    year: '2025',
-    title: 'Looking for Opportunities',
-    description: 'Actively seeking internships and entry-level positions to apply my skills in Data Science & Full-Stack Development.',
+    year: 'September 2025',
+    title: 'Computer Science Graduate',
+    description: 'Successfully completed B.Sc. in Computer Science at The Academic College of Tel-Aviv Yaffo.',
+    type: 'milestone'
+  },
+  {
+    year: '2025-Present',
+    title: 'Software Engineering Career',
+    description: 'Seeking software engineering opportunities to apply technical expertise in building scalable systems and contributing to innovative development teams.',
     type: 'goal'
   }
 ];

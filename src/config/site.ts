@@ -1,20 +1,21 @@
 export const siteConfig = {
   // Site Metadata
   name: "Ofek Cohen Portfolio",
-  title: "Ofek Cohen | Computer Science Student & Developer",
-  description: "Portfolio website showcasing projects, skills, and experience of Ofek Cohen, a Computer Science student passionate about creating innovative solutions through code.",
+  title: "Ofek Cohen | Software Engineer & CS Graduate",
+  description: "Portfolio showcasing the software engineering expertise and innovative projects of Ofek Cohen, a Computer Science graduate specializing in scalable system design and technical leadership.",
   keywords: [
-    "computer science",
+    "software engineer",
+    "computer science graduate",
     "portfolio", 
-    "web development",
+    "software development",
+    "system architecture",
     "programming",
     "react",
     "typescript",
     "nextjs",
-    "data science",
-    "machine learning",
-    "AI",
-    "full-stack development"
+    "backend development",
+    "technical leadership",
+    "scalable systems"
   ],
   author: "Ofek Cohen",
   creator: "Ofek Cohen",
@@ -74,9 +75,9 @@ export const siteConfig = {
   
   // SEO
   seo: {
-    defaultTitle: "Ofek Cohen | Computer Science Student & Developer",
+    defaultTitle: "Ofek Cohen | Software Engineer & CS Graduate",
     titleTemplate: "%s | Ofek Cohen Portfolio",
-    defaultDescription: "Portfolio website showcasing projects, skills, and experience of Ofek Cohen, a Computer Science student passionate about creating innovative solutions through code.",
+    defaultDescription: "Portfolio showcasing the software engineering expertise and innovative projects of Ofek Cohen, a Computer Science graduate specializing in scalable system design and technical leadership.",
     openGraph: {
       type: "website",
       locale: "en_US",
