@@ -65,6 +65,6 @@ export function useSkillsConfig() {
 }
 
 export function useAboutConfig() {
-  const { timelineConfig, interestsConfig } = useConfig();
-  return { timelineConfig, interestsConfig };
+  const { timelineConfig } = useConfig();
+  return { timelineConfig };
 }

@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { 
-  interestsConfig,
   personalConfig 
 } from '@/config';
 import Timeline from '@/components/Timeline';
@@ -68,36 +67,6 @@ export default function AboutPage() {
           showBackground={false}
           className="mb-20"
         />
-
-        {/* Interests Section */}
-        <section className="mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Interests & Passions</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Areas of technology and development that excite me and drive my continuous learning.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {interestsConfig.map((interest, index) => (
-              <div
-                key={interest.name}
-                className="group bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-200">
-                  {interest.icon}
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-200">
-                  {interest.name}
-                </h3>
-                <p className="text-gray-600">
-                  {interest.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
 
         {/* Call to Action */}
         <section className="text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-12 text-white">

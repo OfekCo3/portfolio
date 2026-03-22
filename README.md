@@ -31,7 +31,7 @@ portfolio/
 │   └── ...             # Static files
 ├── src/
 │   ├── app/            # Next.js App Router pages
-│   │   ├── about/      # About page with timeline & interests
+│   │   ├── about/      # About page with timeline
 │   │   ├── contact/    # Contact page with form & methods
 │   │   ├── projects/   # Projects page with skills section
 │   │   ├── globals.css # Global styles & animations
@@ -48,7 +48,6 @@ portfolio/
 │   ├── config/         # Configuration files
 │   │   ├── contact.ts   # Contact methods & reasons
 │   │   ├── index.ts     # Central exports
-│   │   ├── interests.ts # Areas of interest
 │   │   ├── navigation.ts # Navigation & social links
 │   │   ├── personal.ts  # Personal information
 │   │   ├── site.ts      # Site metadata & SEO
@@ -231,7 +230,6 @@ export const siteConfig = {
 - `src/config/personal.ts` - Personal info, bio, contact details
 - `src/config/skills.ts` - Technical skills and levels
 - `src/config/timeline.ts` - Career timeline and milestones
-- `src/config/interests.ts` - Areas of interest
 - `src/config/navigation.ts` - Navigation and social links
 - `src/config/contact.ts` - Contact page settings and FAQ
 - `src/config/site.ts` - SEO, metadata, and site-wide settings

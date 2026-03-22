@@ -20,8 +20,8 @@ export const timelineConfig: TimelineItem[] = [
   },
   {
     year: '2021',
-    title: 'She Codes – Event Coordinator',
-    description: 'Volunteered as an event coordinator, organizing community events and workshops.',
+    title: 'She Codes – Python Mentor and Event Coordinator',
+    description: 'Volunteered as a python mentor and event coordinator, guiding women in Python and programming fundamentals, and organizing community events and workshops.',
     type: 'volunteering'
   },
   {
@@ -29,12 +29,6 @@ export const timelineConfig: TimelineItem[] = [
     title: 'Started Computer Science Degree',
     description: 'Began my B.Sc. in Computer Science at MTA.',
     type: 'education'
-  },
-  {
-    year: '2022',
-    title: 'She Codes – Python Mentor',
-    description: 'Became a mentor at She Codes, guiding women in Python and programming fundamentals.',
-    type: 'volunteering'
   },
   {
     year: '2023',

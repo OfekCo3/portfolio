@@ -4,7 +4,7 @@ export const personalConfig = {
   initials: "OC",
   title: "Software Engineer & Computer Science Graduate",
   location: "Tel Aviv, Israel",
-  study: "B.Sc. Computer Science – Data Science",
+  study: "B.Sc. Computer Science",
   university: "The Academic College of Tel-Aviv Yaffo",
   experience: "Software Engineering & Technical Leadership",
   focus: "Software Engineering & System Architecture",
